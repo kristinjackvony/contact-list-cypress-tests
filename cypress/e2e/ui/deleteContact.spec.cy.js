@@ -18,12 +18,8 @@ describe('Delete Contact Tests', () => {
         loginPage.login()
         contactListPage.getAddContactButton().click()
         addContactPage.addContact(contact)
-    })
-    
-	beforeEach(() => {
-        loginPage.login()
         contactListPage.getContactDetails(contact.firstName, contact.lastName)
-	})
+    })
 
     it('can delete the contact', () => {
         contactDetailsPage.getDeleteContactButton().click()
