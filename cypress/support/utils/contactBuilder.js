@@ -2,10 +2,9 @@ import { faker } from '@faker-js/faker'
 
   function generateRealisticPhoneNumber() {
     const areaCode = faker.number.int({ min: 200, max: 999 })
-	const centralOfficeCode = faker.number.int({ min: 200, max: 999 })
-	const lineNumber = faker.number.int({ min: 1000, max: 9999 })
-	return `${areaCode}-${centralOfficeCode}-${lineNumber}`
-
+	  const centralOfficeCode = faker.number.int({ min: 200, max: 999 })
+	  const lineNumber = faker.number.int({ min: 1000, max: 9999 })
+	  return `${areaCode}-${centralOfficeCode}-${lineNumber}`
   }
 
   export function buildContact() {
