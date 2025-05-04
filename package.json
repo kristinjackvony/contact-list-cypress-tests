@@ -6,7 +6,8 @@
     "test": "npx cypress open --e2e --browser chrome",
     "api-tests": "npx cypress run --spec 'cypress/e2e/api/*.cy.js'",
     "ui-tests": "npx cypress run --spec 'cypress/e2e/ui/*.cy.js'",
-    "all-tests": "npx cypress run --spec 'cypress/e2e/**/*.cy.js'"
+    "all-tests": "npx cypress run --spec 'cypress/e2e/**/*.cy.js'",
+    "mobile": "cypress open --e2e --browser chrome --config viewportWidth=375,viewportHeight=667"
   },
   "keywords": [],
   "author": "",
