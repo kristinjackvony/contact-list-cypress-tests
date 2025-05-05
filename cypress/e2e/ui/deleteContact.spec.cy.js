@@ -2,7 +2,6 @@ import LoginPage from '../../support/pages/LoginPage'
 import ContactListPage from '../../support/pages/ContactListPage'
 import AddContactPage from '../../support/pages/AddContactPage'
 import ContactDetailsPage from '../../support/pages/ContactDetailsPage'
-import EditContactPage from '../../support/pages/EditContactPage'
 import { buildContact } from "../../support/utils/contactBuilder"
 
 describe('Delete Contact Tests', () => {
