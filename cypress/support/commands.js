@@ -2,7 +2,6 @@ import { } from "@faker-js/faker"
 
 Cypress.Commands.add('authenticate', () => {
     cy.request({
-        failOnStatusCode: false,
         method: 'POST',
         url: 'https://thinking-tester-contact-list.herokuapp.com/users/login',
         body: {
