@@ -14,11 +14,8 @@ describe('Get Contact Details Tests', () => {
     const contact = buildContact()
 
     before(() => {
-        //loginPage.login()
-        //contactListPage.getAddContactButton().click()
         cy.authenticate()
         cy.addContact(contact)
-        //addContactPage.addContact(contact)
     })
     
 	beforeEach(() => {
